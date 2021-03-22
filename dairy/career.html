@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dairylac at your door</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+   <link href="img/fav-icon.png" rel="shortcut icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+  
+  <!-- Bootstrap CSS File -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <link href="css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+    
+    <script src='https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit' async defer></script>    
+    <script>
+      var recaptcha1;
+      var recaptcha2;
+      var myCallBack = function() {
+        //Render the recaptcha1 on the element with ID "recaptcha1"
+        recaptcha1 = grecaptcha.render('recaptcha1', {
+          'sitekey' : '6Lf72SMUAAAAAJ6arCuJnrxm9zCvcHXiA-pBTXw3', //Replace this with your Site key
+          'theme' : 'light'
+        });
+        
+        //Render the recaptcha2 on the element with ID "recaptcha2"
+        recaptcha2 = grecaptcha.render('recaptcha2', {
+          'sitekey' : '6Lf72SMUAAAAAJ6arCuJnrxm9zCvcHXiA-pBTXw3', //Replace this with your Site key
+          'theme' : 'light'
+        });
+      };
+    </script>
+<style type="text/css">
+  
+  #recaptcha {
+    float: left;
+}
+
+</style>
+ 
+
+
+</head>
+
+<body>
+
+<div id="preloader"></div>
+
+
+ <!-- top header section  starts here -->
+ <section class="top-header">	
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="top-header-content">
+          <ul>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Investor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- top header section  ends here -->
+
+ <!-- main header starts here -->
+<section class="main-header wow fadeInUp ">
+<div class="header1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+      </div><!-- logo ends here -->
+
+      <div class="col-md-9 col-sm-9">
+         <div class="main-menu">
+            <div id="navbar">
+              <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#product-section">Product</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#contact-section">Contact Us</a></li>
+                    <li><a href="#leave-query">Query</a></li>
+                    <li class="active"><a href="career.html">Career</a></li>
+                  </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+              </nav>
+            </div>
+
+         </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+<!-- main header ends here -->
+
+<!-- caree banner starts here -->
+
+
+<section class="career-banner">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="caree=banner-img">
+            <img src="img/career.jpg" alt="cow-banner">
+         </div>
+      </div>
+   </div>
+</section>
+<!-- career banner ends here -->
+<!-- career form section starts here -->
+<section class="career-form">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-6 col-sm-6">
+            <div class="career-form-section">
+               <div class="contact-form-box">
+                  <div class="contact-form-content">
+                     <h1><span class="text-pink">Job Profile</span><br>Marketing Executive<br>Field Work - Canopy<br>8 hr Job<br></h1>
+                     <img class="wow fadeInUp" src="img/edit.png" style="visibility: visible; animation-name: fadeInUp;">
+                  </div>
+                  <div class="form-area">
+                     <form id="marketing_form" action="#" method="post">
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <input class="form-control" id="queryInputName" name="queryInputName" aria-describedby="emailHelp" placeholder="Name" type="email">
+                           </div>   
+                        </div>
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <input class="form-control" id="queryInputNumber" name="queryInputNumber" aria-describedby="emailHelp" placeholder="Number" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" type="phone number">
+                           </div>   
+                        </div>
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <input class="form-control" id="queryInputAddress" name="queryInputAddress" aria-describedby="emailHelp" placeholder="City and Area" type="email">
+                           </div>
+                        </div>
+                        <div class="g-recaptcha" id='recaptcha1'></div>
+                        <div class="form-submit">
+                           <a href="#" id="query-marketing">
+                              <p>Submit<i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                           </a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="col-md-6 col-sm-6">
+            <div class="career-form-section">
+               <div class="contact-form-box">
+                  <div class="contact-form-content">
+                     <h1><span class="text-pink">Job Profile</span><br>Delivery Boy<br>Must have a bike<br>3 hr Job</h1>
+                     <img class="wow fadeInUp" src="img/edit.png" style="visibility: visible; animation-name: fadeInUp;">
+                  </div>
+                  <div class="form-area">
+                     <form id="delivery_form" action="#" method="post">
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <input class="form-control" id="queryInputName" name="queryInputName" aria-describedby="emailHelp" placeholder="Name" type="email">
+                           </div>   
+                        </div>
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <input class="form-control" id="queryInputNumber" name="queryInputNumber" aria-describedby="emailHelp" placeholder="Number" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" type="phone number">
+                           </div>   
+                        </div>
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <input class="form-control" id="queryInputAddress" name="queryInputAddress" aria-describedby="emailHelp" placeholder="City and Area" type="email">
+                           </div>
+                        </div>
+                        <div class="g-recaptcha" id='recaptcha2'></div>
+                        <div class="form-submit">
+                           <a href="#" id="query-delivery">
+                              <p>Submit<i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                           </a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- career form section ends here -->
+
+
+
+
+
+
+<!-- footer starts here -->
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="footer-mini-box">
+          <h3 class="footer-title">About Us</h3>
+          <p>Dairylac is a trademark of Mallekan Dairy and Agro Pvt. Ltd. FSSAI License Number:10815019000086</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="footer-mini-box">
+          <h3 class="footer-title">Areas Under Service</h3>
+          <ul>
+            <li>Haryana – Gurgaon</li>
+            <li>Delhi – Dwarka</li>
+            <li>Delhi – Janakpuri</li>
+            <li>Delhi - Vikaspuri</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="footer-mini-box">
+          <h3 class="footer-title">Contact Us</h3>
+          <p>contactus@dairylac.com <br>011-61616161<br>9821396096</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer ends here -->
+
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/hoverIntent.js"></script>
+  <script src="js/superfish.min.js"></script>
+  <script src="js/morphext.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/sticky.js"></script>
+  <script src="js/easing.js"></script>
+<script src="js/jquery-scrolltofixed.js"></script>
+<script src="js/jquery-scrolltofixed-min.js"></script>
+
+
+  
+  <!-- Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+ 
+
+<script type="text/javascript">
+  
+  // makes sure the whole site is loaded
+
+  jQuery(window).load(function() {
+
+          // will first fade out the loading animation
+
+      jQuery("#status").fadeOut();
+
+          // will fade out the whole DIV that covers the website.
+
+      jQuery("#preloader").delay(1000).fadeOut("slow");
+
+  })
+  
+</script>
+<script>
+    $(document).ready(function() {
+
+        // Dock the header to the top of the window when scrolled past the banner.
+        // This is the default behavior.
+
+        $('.header').scrollToFixed();
+
+
+        // Dock the footer to the bottom of the page, but scroll up to reveal more
+        // content if the page is scrolled far enough.
+
+        
+
+        // Dock each summary as it arrives just below the docked header, pushing the
+        // previous summary up the page.
+
+        var summaries = $('.summary');
+        summaries.each(function(i) {
+            var summary = $(summaries[i]);
+            var next = summaries[i + 1];
+
+            summary.scrollToFixed({
+                marginTop: $('.header').outerHeight(true) + 10,
+                limit: function() {
+                    var limit = 0;
+                    if (next) {
+                        limit = $(next).offset().top - $(this).outerHeight(true) - 10;
+                    }
+                    return limit;
+                },
+                zIndex: 999
+            });
+        });
+		$("#query-marketing").click(function(e){
+			var nm = $("#marketing_form #queryInputName").val();
+			var ph = $("#marketing_form #queryInputNumber").val();
+			var ad = $("#marketing_form #queryInputAddress").val();
+			var cr = $("#g-recaptcha-response").val();
+			if (nm.length==0){
+				alert("Enter a valid name.");
+				return false;
+			}
+			var re = /^[0-9]{10,12}$/;
+			if (!re.test(ph)){
+				alert("Enter a valid phone number.");
+				return false;
+			}
+			if (ad.length==0){
+				alert("Enter a valid city/area name.");
+				return false;
+			}
+			if (cr.length==0){
+				alert("Plese select capcha.");
+				return false;
+			}
+			$.post("request_mail.php",{tag:'marketing',name:nm,phone:ph,address:ad,capcha:cr},function(result){
+			
+				var s = result.replace(/[\n\r]/g,'');
+				if(s=='done'){
+					document.location = "thanku.html";
+				}
+				else{
+					alert(s);
+				}
+			});		
+			
+		});   
+		$("#query-delivery").click(function(e){
+			var nm = $("#delivery_form #queryInputName").val();
+			var ph = $("#delivery_form #queryInputNumber").val();
+			var ad = $("#delivery_form #queryInputAddress").val();
+			var cr = $("#g-recaptcha-response-1").val();
+			if (nm.length==0){
+				alert("Enter a valid name.");
+				return false;
+			}
+			var re = /^[0-9]{10,12}$/;
+			if (!re.test(ph)){
+				alert("Enter a valid phone number.");
+				return false;
+			}
+			if (ad.length==0){
+				alert("Enter a valid city/area name.");
+				return false;
+			}
+			if (cr.length==0){
+				alert("Plese select capcha.");
+				return false;
+			}			
+			$.post("request_mail.php",{tag:'delivery',name:nm,phone:ph,address:ad,capcha:cr},function(result){
+			
+				var s = result.replace(/[\n\r]/g,'');
+				if(s=='done'){
+					document.location = "thanku.html";
+				}
+				else{
+					alert(s);
+				}
+			});		
+			
+		});   
+		
+    });
+    
+</script>
+    
+</body>
+</html>
